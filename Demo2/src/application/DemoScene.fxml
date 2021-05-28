@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1142.0" text="MINI PROJECT" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <SplitPane dividerPositions="0.2846410684474123" prefHeight="814.0" prefWidth="1200.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fitHeight="562.0" fitWidth="451.0" layoutX="-9.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true" rotate="-180.0">
+                           <image>
+                              <Image url="@../image/g.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="178.0" fitWidth="240.0" layoutX="-13.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/c.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="183.0" fitWidth="210.0" layoutX="178.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" rotate="79.3">
+                           <image>
+                              <Image url="@../image/e.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="createRoomButton" layoutX="24.0" layoutY="55.0" mnemonicParsing="false" onAction="#accessCreateRoomPane" prefHeight="60.0" prefWidth="300.0" text="Create Room" />
+                        <Button fx:id="addObjectButton" layoutX="24.0" layoutY="150.0" mnemonicParsing="false" onAction="#accessAddObjectPane" prefHeight="60.0" prefWidth="135.0" text="Add Object" />
+                        <Button fx:id="addCameraButton" layoutX="187.0" layoutY="150.0" mnemonicParsing="false" onAction="#accessAddCameraPane" prefHeight="60.0" prefWidth="135.0" text="Add Camera" />
+                        <Button fx:id="viewButton" layoutX="24.0" layoutY="250.0" mnemonicParsing="false" onAction="#accessViewPane" prefHeight="60.0" prefWidth="135.0" text="View" />
+                        <Button fx:id="checkPointButton" layoutX="187.0" layoutY="250.0" mnemonicParsing="false" onAction="#accessCheckPointPane" prefHeight="60.0" prefWidth="135.0" text="Check Point" />
+                        <Button fx:id="DetailButton" layoutX="24.0" layoutY="346.0" mnemonicParsing="false" onAction="#accessDetailPane" prefHeight="60.0" prefWidth="135.0" text="Detail" />
+                        <Button layoutX="187.0" layoutY="346.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="135.0" text="Other" />
+                        <Button layoutX="24.0" layoutY="442.0" mnemonicParsing="false" onAction="#goToHomePage" prefHeight="60.0" prefWidth="300.0" text="Home Page" />
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="832.0">
+                     <children>
+                        <ImageView fx:id="image1" fitHeight="339.0" fitWidth="412.0" layoutX="513.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../Downloads/image/f.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="image2" fitHeight="339.0" fitWidth="412.0" layoutX="499.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../Downloads/image/d.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="image3" fitHeight="252.0" fitWidth="285.0" layoutX="-10.0" layoutY="-3.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../Downloads/image/g.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="image4" fitHeight="258.0" fitWidth="257.0" layoutX="-9.0" layoutY="352.0" pickOnBounds="true" preserveRatio="true" rotate="41.7">
+                           <image>
+                              <Image url="@../../../../../../../Downloads/image/h.png" />
+                           </image>
+                        </ImageView>
+                        <AnchorPane fx:id="createRoomPane" layoutX="39.0" layoutY="27.0" prefHeight="499.0" prefWidth="775.0">
+                           <children>
+                              <Label layoutX="160.0" layoutY="100.0" text="WIDTH">
+                                 <font>
+                                    <Font name="System Bold" size="28.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="widthTextFieldCreateRoom" layoutX="300.0" layoutY="80.0" prefHeight="60.0" prefWidth="350.0" />
+                              <Label fx:id="widthLabelCreateRoom" layoutX="300.0" layoutY="140.0" text="Invalid Input!" textFill="#f20808" visible="false">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="160.0" layoutY="190.0" text="LENGTH">
+                                 <font>
+                                    <Font name="System Bold" size="28.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="lengthTextFieldCreateRoom" layoutX="300.0" layoutY="180.0" prefHeight="60.0" prefWidth="350.0" />
+                              <Label fx:id="lengthLabelCreateRoom" layoutX="300.0" layoutY="240.0" text="Invalid Input!" textFill="#f20808" visible="false">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="160.0" layoutY="290.0" text="HEIGHT">
+                                 <font>
+                                    <Font name="System Bold" size="28.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="heightTextFieldCreateRoom" layoutX="300.0" layoutY="280.0" prefHeight="60.0" prefWidth="350.0" />
+                              <Label fx:id="heightLabelCreateRoom" layoutX="300.0" layoutY="340.0" text="Invalid Input!" textFill="#f20808" visible="false">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Button layoutX="300.0" layoutY="380.0" mnemonicParsing="false" onAction="#createRoomEvent" prefHeight="50.0" prefWidth="150.0" text="CREATE" />
+                              <Button fx:id="addButtonCreateRoom" layoutX="500.0" layoutY="380.0" mnemonicParsing="false" onAction="#restartEvent" prefHeight="50.0" prefWidth="150.0" text="RESTART" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="addObjectPane" layoutY="-93.0" prefHeight="655.0" prefWidth="853.0" visible="false">
+                           <children>
+                              <Label layoutX="70.0" layoutY="130.0" text="A1">
+                                 <font>
+                                    <Font name="System Bold" size="28.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="XA1TextFieldAddObject" layoutX="150.0" layoutY="170.0" prefHeight="45.0" prefWidth="100.0" />
+                              <TextField fx:id="YA1TextFieldAddObject" layoutX="400.0" layoutY="170.0" prefHeight="45.0" prefWidth="100.0" />
+                              <TextField fx:id="ZA1TextFieldAddObject" layoutX="650.0" layoutY="170.0" prefHeight="45.0" prefWidth="100.0" />
+                              <Label fx:id="XA1LabelAddObject" layoutX="150.0" layoutY="220.0" text="Invalid Input!" textFill="#f20808" visible="false">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="YA1LabelAddObject" layoutX="400.0" layoutY="220.0" text="Invalid Input!" textFill="#f20808" visible="false">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="ZA1LabelAddObject" layoutX="650.0" layoutY="220.0" text="Invalid Input!" textFill="#f20808" visible="false">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="70.0" layoutY="250.0" text="B1">
+                                 <font>
+                                    <Font name="System Bold" size="28.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="XB1TextFieldAddObject" layoutX="150.0" layoutY="290.0" prefHeight="45.0" prefWidth="100.0" />
+                              <TextField fx:id="YB1TextFieldAddObject" layoutX="400.0" layoutY="290.0" prefHeight="45.0" prefWidth="100.0" />
+                              <TextField fx:id="ZB1TextFieldAddObject" layoutX="650.0" layoutY="290.0" prefHeight="45.0" prefWidth="100.0" />
+                              <Label fx:id="XB1LabelAddObject" layoutX="150.0" layoutY="340.0" text="Invalid Input!" textFill="#f20808" visible="false">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="YB1LabelAddObject" layoutX="400.0" layoutY="340.0" text="Invalid Input!" textFill="#f20808" visible="false">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="ZB1LabelAddObject" layoutX="650.0" layoutY="340.0" text="Invalid Input!" textFill="#f20808" visible="false">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="70.0" layoutY="370.0" text="C1">
+                                 <font>
+                                    <Font name="System Bold" size="28.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="XC1TextFieldAddObject" layoutX="150.0" layoutY="410.0" prefHeight="45.0" prefWidth="100.0" />
+                              <TextField fx:id="YC1TextFieldAddObject" layoutX="400.0" layoutY="410.0" prefHeight="45.0" prefWidth="100.0" />
+                              <TextField fx:id="ZC1TextFieldAddObject" layoutX="650.0" layoutY="410.0" prefHeight="45.0" prefWidth="100.0" />
+                              <Label fx:id="XC1LabelAddObject" layoutX="150.0" layoutY="460.0" text="Invalid Input!" textFill="#f20808" visible="false">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="YC1LabelAddObject" layoutX="400.0" layoutY="460.0" text="Invalid Input!" textFill="#f20808" visible="false">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="ZC1LabelAddObject" layoutX="650.0" layoutY="460.0" text="Invalid Input!" textFill="#f20808" visible="false">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="59.0" layoutY="495.0" text="Heigth">
+                                 <font>
+                                    <Font name="System Bold" size="28.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="heightTextFieldAddObject" layoutX="150.0" layoutY="530.0" prefHeight="45.0" prefWidth="100.0" />
+                              <Label fx:id="heightLabelAddObject" layoutX="150.0" layoutY="580.0" text="Invalid Input!" textFill="#f20808" visible="false">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Button layoutX="570.0" layoutY="528.0" mnemonicParsing="false" onAction="#addObjectEvent" prefHeight="50.0" prefWidth="180.0" text="ADD" />
+                              <Button layoutX="320.0" layoutY="528.0" mnemonicParsing="false" onAction="#renewAddObjectEvent" prefHeight="50.0" prefWidth="180.0" text="NEW" />
+                              <Label layoutX="115.0" layoutY="175.0" text="X :">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="115.0" layoutY="295.0" text="X :">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="115.0" layoutY="415.0" text="X :">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="365.0" layoutY="175.0" text="Y :">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="365.0" layoutY="295.0" text="Y :">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="365.0" layoutY="415.0" text="Y :">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="615.0" layoutY="175.0" text="Z :">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="615.0" layoutY="295.0" text="Z :">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="615.0" layoutY="415.0" text="Z :">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="addCameraPane" prefHeight="553.0" prefWidth="830.0" visible="false">
+                           <children>
+                              <Label layoutX="73.0" layoutY="320.0" text="ANGLE">
+                                 <font>
+                                    <Font name="System Bold" size="28.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="180.0" layoutY="160.0" prefHeight="60.0" prefWidth="140.0" fx:id="xTextFieldAddCamera" />
+                              <Label layoutX="180.0" layoutY="225.0" text="Invalid Input!" textFill="#f20808" visible="false" fx:id="xLabelAddCamera">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="yTextFieldAddCamera" layoutX="380.0" layoutY="160.0" prefHeight="60.0" prefWidth="140.0" />
+                              <Label fx:id="yLabelAddCamera" layoutX="380.0" layoutY="225.0" text="Invalid Input!" textFill="#f20808" visible="false">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="zTextFieldAddCamera" layoutX="580.0" layoutY="160.0" prefHeight="60.0" prefWidth="140.0" />
+                              <Label fx:id="zLabelAddCamera" layoutX="580.0" layoutY="225.0" text="Invalid Input!" textFill="#f20808" visible="false">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="32.0" layoutY="180.0" text="POSITION">
+                                 <font>
+                                    <Font name="System Bold" size="28.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="alphaTextFieldAddCamera" layoutX="180.0" layoutY="300.0" prefHeight="60.0" prefWidth="240.0" />
+                              <Label fx:id="alphaLabelAddCamera" layoutX="180.0" layoutY="365.0" text="Invalid Input!" textFill="#f20808" visible="false">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="betaTextFieldAddCamera" layoutX="480.0" layoutY="300.0" prefHeight="60.0" prefWidth="240.0" />
+                              <Label fx:id="betaLabelAddCamera" layoutX="480.0" layoutY="365.0" text="Invalid Input!" textFill="#f20808" visible="false">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Button layoutX="480.0" layoutY="410.0" mnemonicParsing="false" onAction="#addCameraEvent" prefHeight="50.0" prefWidth="208.0" text="ADD" />
+                              <Button layoutX="207.0" layoutY="410.0" mnemonicParsing="false" onAction="#renewAddCameraEvent" prefHeight="50.0" prefWidth="208.0" text="NEW" />
+                           </children></AnchorPane>
+                        <AnchorPane fx:id="viewPane" prefHeight="561.0" prefWidth="796.0" visible="false">
+                           <children>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e3e4e5df" height="500.0" layoutX="40.0" layoutY="40.0" stroke="BLACK" strokeType="INSIDE" width="500.0" />
+                          <AnchorPane fx:id="flatView" layoutX="40.0" layoutY="40.0" minHeight="0.0" minWidth="0.0" prefHeight="482.0" prefWidth="717.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="checkPointPane" layoutX="-21.0" layoutY="47.0" prefHeight="469.0" prefWidth="805.0" visible="false">
+                           <children>
+                              <TextField layoutX="180.0" layoutY="105.0" prefHeight="50.0" prefWidth="100.0" fx:id="xTextFieldCheckPoint" />
+                              <TextField fx:id="yTextFieldCheckPoint" layoutX="400.0" layoutY="105.0" prefHeight="50.0" prefWidth="100.0" />
+                              <TextField fx:id="zTextFieldCheckPoint" layoutX="620.0" layoutY="105.0" prefHeight="50.0" prefWidth="100.0" />
+                              <Button layoutX="484.0" layoutY="183.0" mnemonicParsing="false" onAction="#checkPointEvent" prefHeight="44.0" prefWidth="144.0" text="CHECK">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="275.0" layoutY="183.0" mnemonicParsing="false" onAction="#renewCheckPointEvent" prefHeight="44.0" prefWidth="145.0" text="NEW">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                              <Label layoutX="570.0" layoutY="110.0" text="Z">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="350.0" layoutY="110.0" text="Y">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="130.0" layoutY="110.0" text="X">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="zLabelCheckPoint" layoutX="620.0" layoutY="149.0" text="Invalid Input!" textFill="#f20808" visible="false">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="yLabelCheckPoint" layoutX="400.0" layoutY="149.0" text="Invalid Input!" textFill="#f20808" visible="false">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="180.0" layoutY="149.0" text="Invalid Input!" textFill="#f20808" visible="false" fx:id="xLabelCheckPoint">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextArea fx:id="textAreaCheckPoint" editable="false" layoutX="117.0" layoutY="235.0" prefHeight="200.0" prefWidth="618.0" />
+                              <Label layoutX="130.0" layoutY="51.0" text="POSITION">
+                                 <font>
+                                    <Font name="System Bold" size="30.0" />
+                                 </font></Label>
+                           </children></AnchorPane>
+                        <AnchorPane fx:id="detailPane" prefHeight="562.0" prefWidth="851.0" visible="false">
+                           <children>
+                              <TableView fx:id="objectTableView" layoutY="44.0" prefHeight="224.0" prefWidth="798.0">
+                                <columns>
+                                  <TableColumn fx:id="a1ColumnObject" prefWidth="200.0" text="A1" />
+                                  <TableColumn fx:id="b1ColumnObject" prefWidth="200.0" text="B1" />
+                                    <TableColumn fx:id="c1ColumnObject" prefWidth="200.0" text="C1" />
+                                    <TableColumn fx:id="heightColumnObject" prefWidth="190.0" text="Height" />
+                                </columns>
+                              </TableView>
+                              <TableView fx:id="cameraTableView" layoutX="3.0" layoutY="308.0" prefHeight="254.0" prefWidth="377.0">
+                                <columns>
+                                  <TableColumn fx:id="positionColumnCamera" prefWidth="232.0" text="POSITION" />
+                                    <TableColumn fx:id="alphaAngleColumnCamera" prefWidth="75.0" text="alpha" />
+                                    <TableColumn fx:id="betaAngleColumnCamera" prefWidth="75.0" text="beta" />
+                                </columns>
+                              </TableView>
+                              <Label layoutX="133.0" layoutY="268.0" text="CAMERA">
+                                 <font>
+                                    <Font name="System Bold" size="28.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="334.0" layoutY="4.0" text="OBJECT">
+                                 <font>
+                                    <Font name="System Bold" size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+            <AnchorPane fx:id="background" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="631.0" fitWidth="1104.0" layoutX="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../Downloads/background.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="430.0" layoutY="306.0" mnemonicParsing="false" onAction="#removeBackground" prefHeight="57.0" prefWidth="286.0" text="This is button">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+  </content>
+</TitledPane>
